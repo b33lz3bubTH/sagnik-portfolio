@@ -92,7 +92,7 @@ export default function GithubSection() {
                   href={repo.html_url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block p-6 bg-gray-800/50 border border-gray-700/50 rounded-xl hover:border-purple-500/50 transition-colors"
+                  className="block p-6 bg-gray-800/50 border border-gray-700/50 rounded-xl hover:border-blue-500/50 transition-colors"
                 >
                   <h4 className="text-xl font-semibold mb-2">{repo.name}</h4>
                   <p className="text-sm text-gray-400 line-clamp-3 mb-4">{repo.description}</p>

@@ -58,15 +58,15 @@ export default function HeroSection({ onContact }: HeroSectionProps = {}) {
 
         <h1
           ref={titleRef}
-          className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent"
+          className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-600 bg-clip-text text-transparent"
         >
           {/* Text will be animated */}
         </h1>
 
         <p ref={subtitleRef} className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
           Crafting beautiful, responsive web applications with{" "}
-          <span className="text-purple-400 font-semibold">Angular</span>,{" "}
-          <span className="text-blue-400 font-semibold">TypeScript</span>, and{" "}
+          <span className="text-blue-400 font-semibold">Angular</span>,{" "}
+          <span className="text-cyan-400 font-semibold">TypeScript</span>, and{" "}
           <span className="text-green-400 font-semibold">Node.js</span>
         </p>
 
@@ -74,16 +74,16 @@ export default function HeroSection({ onContact }: HeroSectionProps = {}) {
           <a
             href="/cv.pdf"
             download
-            className="px-8 py-4 bg-gradient-to-r from-green-400 to-teal-500 rounded-full font-semibold text-white hover:shadow-lg hover:shadow-green-500/30 transition-all duration-300 transform hover:scale-105"
+            className="px-8 py-4 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full font-semibold text-white hover:shadow-lg hover:shadow-green-500/30 transition-all duration-300 transform hover:scale-105"
           >
             Download&nbsp;CV
           </a>
-          <button className="px-8 py-4 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full font-semibold text-white hover:shadow-lg hover:shadow-purple-500/25 transition-all duration-300 transform hover:scale-105">
+          <button className="px-8 py-4 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full font-semibold text-white hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 transform hover:scale-105">
             View My Work
           </button>
           <button
             onClick={onContact}
-            className="px-8 py-4 border border-gray-600 rounded-full font-semibold text-gray-300 hover:border-purple-400 hover:text-purple-400 transition-all duration-300"
+            className="px-8 py-4 border border-gray-600 rounded-full font-semibold text-gray-300 hover:border-blue-400 hover:text-blue-400 transition-all duration-300"
           >
             Get In Touch
           </button>

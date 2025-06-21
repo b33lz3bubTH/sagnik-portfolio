@@ -34,10 +34,10 @@ export default function ContactModal({ open, onOpenChange }: ContactModalProps) 
       <Dialog open={open && !sent} onOpenChange={onOpenChange}>
         <DialogContent className="sm:max-w-lg bg-gray-900/95 backdrop-blur-md border border-gray-700/50 shadow-2xl">
           <DialogHeader className="text-center">
-            <div className="mx-auto w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mb-4">
+            <div className="mx-auto w-16 h-16 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center mb-4">
               <Mail className="w-8 h-8 text-white" />
             </div>
-            <DialogTitle className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
+            <DialogTitle className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-cyan-500 bg-clip-text text-transparent">
               Get In Touch
             </DialogTitle>
             <p className="text-gray-400 mt-2">
@@ -52,7 +52,7 @@ export default function ContactModal({ open, onOpenChange }: ContactModalProps) 
                 name="name"
                 required
                 placeholder="Your name"
-                className="w-full rounded-lg bg-gray-800/50 border border-gray-700 px-4 py-3 text-white placeholder-gray-400 outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200"
+                className="w-full rounded-lg bg-gray-800/50 border border-gray-700 px-4 py-3 text-white placeholder-gray-400 outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
               />
             </div>
             
@@ -63,7 +63,7 @@ export default function ContactModal({ open, onOpenChange }: ContactModalProps) 
                 name="email"
                 required
                 placeholder="your.email@example.com"
-                className="w-full rounded-lg bg-gray-800/50 border border-gray-700 px-4 py-3 text-white placeholder-gray-400 outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200"
+                className="w-full rounded-lg bg-gray-800/50 border border-gray-700 px-4 py-3 text-white placeholder-gray-400 outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
               />
             </div>
             
@@ -74,13 +74,13 @@ export default function ContactModal({ open, onOpenChange }: ContactModalProps) 
                 required
                 placeholder="Tell me about your project or just say hello..."
                 rows={4}
-                className="w-full rounded-lg bg-gray-800/50 border border-gray-700 px-4 py-3 text-white placeholder-gray-400 resize-none outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200"
+                className="w-full rounded-lg bg-gray-800/50 border border-gray-700 px-4 py-3 text-white placeholder-gray-400 resize-none outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
               />
             </div>
             
             <Button 
               type="submit" 
-              className="w-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold py-3 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-purple-500/25" 
+              className="w-full bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white font-semibold py-3 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-blue-500/25" 
               disabled={sending}
             >
               {sending ? (
@@ -117,7 +117,7 @@ export default function ContactModal({ open, onOpenChange }: ContactModalProps) 
               <p className="text-sm text-gray-400 mb-2">For faster response, you can also:</p>
               <a 
                 href="mailto:sagnikpaul@gmail.com" 
-                className="text-purple-400 hover:text-purple-300 font-medium transition-colors"
+                className="text-blue-400 hover:text-blue-300 font-medium transition-colors"
               >
                 sagnikpaul@gmail.com
               </a>

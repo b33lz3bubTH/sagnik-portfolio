@@ -31,7 +31,7 @@ export default function FloatingNavbar({ onContact }: FloatingNavbarProps = {}) 
           {/* LOGO / NAME */}
           <a
             href="#home"
-            className="text-lg font-bold bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent"
+            className="text-lg font-bold bg-gradient-to-r from-blue-400 to-cyan-500 bg-clip-text text-transparent"
           >
             Sagnik&nbsp;Paul
           </a>
@@ -42,7 +42,7 @@ export default function FloatingNavbar({ onContact }: FloatingNavbarProps = {}) 
               <a
                 key={label}
                 href={href}
-                className="flex items-center gap-2 rounded-md px-3 py-2 text-sm hover:bg-purple-500/10 transition-colors"
+                className="flex items-center gap-2 rounded-md px-3 py-2 text-sm hover:bg-blue-500/10 transition-colors"
               >
                 <Icon className="w-4 h-4" />
                 <span>{label}</span>
@@ -53,7 +53,7 @@ export default function FloatingNavbar({ onContact }: FloatingNavbarProps = {}) 
               <a
                 key={label}
                 href={href}
-                className="flex items-center gap-2 rounded-md px-3 py-2 text-sm hover:bg-purple-500/10 transition-colors"
+                className="flex items-center gap-2 rounded-md px-3 py-2 text-sm hover:bg-blue-500/10 transition-colors"
               >
                 <Icon className="w-4 h-4" />
                 <span>{label}</span>
@@ -63,7 +63,7 @@ export default function FloatingNavbar({ onContact }: FloatingNavbarProps = {}) 
             {/* Contact Button */}
             <button
               onClick={onContact}
-              className="flex items-center gap-2 rounded-md px-3 py-2 text-sm hover:bg-purple-500/10 transition-colors"
+              className="flex items-center gap-2 rounded-md px-3 py-2 text-sm hover:bg-blue-500/10 transition-colors"
             >
               <Mail className="w-4 h-4" />
               <span>Contact</span>
@@ -100,7 +100,7 @@ export default function FloatingNavbar({ onContact }: FloatingNavbarProps = {}) 
             key={label}
             href={href}
             onClick={() => setOpen(false)}
-            className="block w-max mx-auto text-lg font-medium hover:text-purple-400"
+            className="block w-max mx-auto text-lg font-medium hover:text-blue-400"
           >
             {label}
           </a>
@@ -110,7 +110,7 @@ export default function FloatingNavbar({ onContact }: FloatingNavbarProps = {}) 
             key={label}
             href={href}
             onClick={() => setOpen(false)}
-            className="block w-max mx-auto text-lg font-medium hover:text-purple-400"
+            className="block w-max mx-auto text-lg font-medium hover:text-blue-400"
           >
             {label}
           </a>
@@ -120,7 +120,7 @@ export default function FloatingNavbar({ onContact }: FloatingNavbarProps = {}) 
             setOpen(false)
             onContact?.()
           }}
-          className="block w-max mx-auto text-lg font-medium hover:text-purple-400"
+          className="block w-max mx-auto text-lg font-medium hover:text-blue-400"
         >
           Contact
         </button>

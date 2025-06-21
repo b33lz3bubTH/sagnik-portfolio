@@ -12,7 +12,7 @@ const skills = [
   { name: "Golang", level: 70, color: "from-cyan-500 to-cyan-600", icon: "🐹" },
   { name: "MongoDB", level: 75, color: "from-green-400 to-green-500", icon: "🍃" },
   { name: "Tailwind CSS", level: 85, color: "from-teal-500 to-teal-600", icon: "🎨" },
-  { name: "Capacitor", level: 80, color: "from-purple-500 to-purple-600", icon: "⚡" },
+  { name: "Capacitor", level: 80, color: "from-blue-500 to-cyan-500", icon: "⚡" },
 ]
 
 export default function SkillsSection() {
@@ -86,7 +86,7 @@ export default function SkillsSection() {
       <div className="max-w-6xl mx-auto">
         <h2
           ref={titleRef}
-          className="text-5xl md:text-6xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent"
+          className="text-5xl md:text-6xl font-bold text-center mb-16 bg-gradient-to-r from-blue-400 to-cyan-500 bg-clip-text text-transparent"
         >
           Skills & Technologies
         </h2>
@@ -95,14 +95,14 @@ export default function SkillsSection() {
           {skills.map((skill, index) => (
             <div
               key={skill.name}
-              className={`skill-card skill-card-${index} bg-gray-800/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-700/50 hover:border-purple-500/50 transition-all duration-300 group hover:shadow-lg hover:shadow-purple-500/10`}
+              className={`skill-card skill-card-${index} bg-gray-800/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-700/50 hover:border-blue-500/50 transition-all duration-300 group hover:shadow-lg hover:shadow-blue-500/10`}
             >
               <div className="flex items-center justify-between mb-4">
                 <span className="text-3xl">{skill.icon}</span>
                 <span className="text-sm text-gray-400 font-semibold">{skill.level}%</span>
               </div>
 
-              <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-purple-400 transition-colors">
+              <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-blue-400 transition-colors">
                 {skill.name}
               </h3>
 

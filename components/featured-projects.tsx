@@ -56,7 +56,7 @@ export default function FeaturedProjects() {
           {projects.map((p) => (
             <div
               key={p.name}
-              className="project-card bg-gray-800/50 border border-gray-700/50 rounded-xl p-6 hover:border-purple-500/50 transition-colors"
+              className="project-card bg-gray-800/50 border border-gray-700/50 rounded-xl p-6 hover:border-blue-500/50 transition-colors"
             >
               <h3 className="text-2xl font-semibold mb-2">{p.name}</h3>
               <p className="text-gray-400 text-sm mb-3">

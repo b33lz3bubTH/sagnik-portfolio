@@ -75,7 +75,7 @@ export default function EducationSection() {
       <div className="max-w-4xl mx-auto">
         <h2
           ref={titleRef}
-          className="text-5xl md:text-6xl font-bold text-center mb-16 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent"
+          className="text-5xl md:text-6xl font-bold text-center mb-16 bg-gradient-to-r from-blue-400 to-cyan-500 bg-clip-text text-transparent"
         >
           Education
         </h2>
@@ -88,7 +88,7 @@ export default function EducationSection() {
             >
               <div className="flex flex-col md:flex-row md:items-start gap-6">
                 <div className="flex-shrink-0">
-                  <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center">
+                  <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center">
                     <GraduationCap className="w-8 h-8 text-white" />
                   </div>
                 </div>
@@ -135,7 +135,7 @@ export default function EducationSection() {
         </div>
 
         <div className="mt-16 text-center">
-          <div className="inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-full border border-blue-500/30">
+          <div className="inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-blue-500/20 to-cyan-500/20 rounded-full border border-blue-500/30">
             <GraduationCap className="w-5 h-5 text-blue-400" />
             <span className="text-blue-400 font-semibold">Academic Excellence</span>
           </div>
