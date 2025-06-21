@@ -25,7 +25,7 @@ export default function Portfolio() {
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 overflow-x-hidden">
-      <FloatingNavbar />
+      <FloatingNavbar onContact={() => setOpenContact(true)} />
       <main className="relative">
         <HeroSection onContact={() => setOpenContact(true)} />
         <SkillsSection />

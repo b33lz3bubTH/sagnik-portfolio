@@ -13,10 +13,13 @@ const navLinks = [
 const socialLinks = [
   { label: "GitHub", href: "#github", icon: Github },
   { label: "LinkedIn", href: "#", icon: Linkedin },
-  { label: "Contact", href: "#contact", icon: Mail },
 ]
 
-export default function FloatingNavbar() {
+export interface FloatingNavbarProps {
+  onContact?: () => void
+}
+
+export default function FloatingNavbar({ onContact }: FloatingNavbarProps = {}) {
   const [open, setOpen] = useState(false)
   
 
@@ -56,6 +59,15 @@ export default function FloatingNavbar() {
                 <span>{label}</span>
               </a>
             ))}
+
+            {/* Contact Button */}
+            <button
+              onClick={onContact}
+              className="flex items-center gap-2 rounded-md px-3 py-2 text-sm hover:bg-purple-500/10 transition-colors"
+            >
+              <Mail className="w-4 h-4" />
+              <span>Contact</span>
+            </button>
           </nav>
 
           {/* HAMBURGER */}
@@ -83,7 +95,7 @@ export default function FloatingNavbar() {
         >
           <X className="w-5 h-5" />
         </button>
-        {[...navLinks, ...socialLinks].map(({ label, href }) => (
+        {navLinks.map(({ label, href }) => (
           <a
             key={label}
             href={href}
@@ -93,6 +105,25 @@ export default function FloatingNavbar() {
             {label}
           </a>
         ))}
+        {socialLinks.map(({ label, href }) => (
+          <a
+            key={label}
+            href={href}
+            onClick={() => setOpen(false)}
+            className="block w-max mx-auto text-lg font-medium hover:text-purple-400"
+          >
+            {label}
+          </a>
+        ))}
+        <button
+          onClick={() => {
+            setOpen(false)
+            onContact?.()
+          }}
+          className="block w-max mx-auto text-lg font-medium hover:text-purple-400"
+        >
+          Contact
+        </button>
       </nav>
     </header>
   )
