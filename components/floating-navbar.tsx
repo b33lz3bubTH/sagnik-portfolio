@@ -18,6 +18,7 @@ const socialLinks = [
 
 export default function FloatingNavbar() {
   const [open, setOpen] = useState(false)
+  
 
   return (
     <header className="fixed inset-x-0 top-4 z-50 flex justify-center pointer-events-none">

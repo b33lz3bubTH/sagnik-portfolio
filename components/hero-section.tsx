@@ -7,7 +7,11 @@ import { ChevronDown } from "lucide-react"
 
 gsap.registerPlugin(TextPlugin)
 
-export default function HeroSection() {
+export interface HeroSectionProps {
+  onContact?: () => void
+}
+
+export default function HeroSection({ onContact }: HeroSectionProps = {}) {
   const heroRef = useRef<HTMLDivElement>(null)
   const nameRef = useRef<HTMLHeadingElement>(null)
   const titleRef = useRef<HTMLHeadingElement>(null)
@@ -77,7 +81,10 @@ export default function HeroSection() {
           <button className="px-8 py-4 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full font-semibold text-white hover:shadow-lg hover:shadow-purple-500/25 transition-all duration-300 transform hover:scale-105">
             View My Work
           </button>
-          <button className="px-8 py-4 border border-gray-600 rounded-full font-semibold text-gray-300 hover:border-purple-400 hover:text-purple-400 transition-all duration-300">
+          <button
+            onClick={onContact}
+            className="px-8 py-4 border border-gray-600 rounded-full font-semibold text-gray-300 hover:border-purple-400 hover:text-purple-400 transition-all duration-300"
+          >
             Get In Touch
           </button>
         </div>
